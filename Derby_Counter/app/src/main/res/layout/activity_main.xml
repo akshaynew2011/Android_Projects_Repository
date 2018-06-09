@@ -1,0 +1,172 @@
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:src="@drawable/derby"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetbutton"
+        android:background="#FFA500"
+        android:layout_margin="32dp"/>
+    <Button
+        android:id="@+id/half_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HALF TIME SCORE"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="#00FFFF"
+        android:onClick="halftime"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/half_time"
+        android:text="FULL TIME SCORE"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif"
+        android:background="#8B0"
+        android:layout_marginBottom="10dp"
+        android:onClick="fulltime"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBS"
+        android:textStyle="italic"
+        android:background="#FA8072"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="173dp"
+        android:layout_marginLeft="16dp"
+        android:onClick="subs_one"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MANAGER"
+        android:textStyle="italic"
+        android:background="#FA8072"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="113dp"
+        android:layout_marginLeft="16dp"
+        android:onClick="maager_1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="173dp"
+        android:text="SUBS"
+        android:onClick="subs_two"
+        android:textStyle="italic"
+        android:background="#9999ff"
+        android:layout_marginRight="16dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="113dp"
+        android:text="MANAGER"
+        android:textStyle="italic"
+        android:onClick="manager_two"
+        android:background="#9999ff"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017/2018 English Premier League"
+        android:textColor="#BDB76B"
+        android:layout_centerHorizontal="true"
+        android:paddingB="24dp"/>
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context="com.example.aksha.sport_counter_derby.MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MAN UNITED"
+                android:scrollHorizontally="true"
+                android:gravity="center"
+                android:padding="16dp"
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:layout_margin="16dp"
+                android:textColor="#ADFF2F"/>
+
+            <TextView
+                android:id="@+id/team_a_is_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:paddingBottom="24dp"
+                android:textSize="56sp"
+                android:textColor="#FFD700"
+                android:fontFamily="sans-serif-smallcaps"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.example.aksha.sport_counter_derby.MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MAN CITY"
+                android:gravity="center"
+                android:padding="16dp"
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:layout_margin="16dp"
+                android:textColor="#ADFF2F"/>
+
+            <TextView
+                android:id="@+id/team_a_score_is_B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:paddingBottom="24dp"
+                android:textSize="56sp"
+                android:textColor="#FFD700"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
